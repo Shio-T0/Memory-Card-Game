@@ -1,11 +1,11 @@
 {
   "food": {
-    "1": { "name": "Sushi", "text": "Japanese dish of vinegared rice with raw fish" },
-    "2": { "name": "Paella", "text": "Spanish rice dish with saffron and seafood" },
-    "3": { "name": "Croissant", "text": "Flaky French crescent-shaped pastry" },
-    "4": { "name": "Tacos", "text": "Mexican folded tortilla with savory filling" },
-    "5": { "name": "Pizza", "text": "Italian flatbread with tomato sauce and cheese" },
-    "6": { "name": "Dim Sum", "text": "Chinese bite-sized steamed dumplings" }
+    "1": { "name": "Chupa Chups (Spain)", "text": "The logo of the brand was created by Salvador Dalí (Spanish painter) in 1969" },
+    "2": { "name": "Fish and Chips (United Kingdom)", "text": "Common takeaway food in numerous countries. The British governament safeguarded supplies of the dish's ingredients during the First World War." },
+    "3": { "name": "Tatin pie (France)", "text": "Apple pie created in 1880s at Hotel Tatin by two sisters Stéphanie and Caroline Tatin " },
+    "4": { "name": "Tempura (Japan)", "text": "Japanese adaptation of the portuguese dish “peixinhos da horta”" },
+    "5": { "name": "Mandioca (Africa) (cassava in English)", "text": "It is used in pasta dishes especially in African cultures." },
+    "6": { "name": "Quesadilla (Mexico)", "text": "Originaly from colonial Mexico (16th century) as a fusion between corn tortillas and dairy products like cheese." }
   },
   "monument": {
     "1": { "name": "Eiffel Tower", "text": "Iron lattice tower built in Paris in 1889" },

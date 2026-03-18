@@ -41,12 +41,32 @@
       initGame();
     });
 
-  function initGame() {
+  // Detect actual image file extension by trying common formats
+  function findImageSrc(id, theme) {
+    const exts = ['jpg', 'jpeg', 'png', 'webp'];
+    return new Promise((resolve) => {
+      let tried = 0;
+      for (const ext of exts) {
+        const img = new Image();
+        const src = `images/${id}-${theme}.${ext}`;
+        img.onload = () => resolve(src);
+        img.onerror = () => { tried++; if (tried === exts.length) resolve(null); };
+        img.src = src;
+      }
+    });
+  }
+
+  async function initGame() {
+    // Detect image extensions for all pairs
+    const imageSrcs = await Promise.all(
+      Array.from({ length: TOTAL_PAIRS }, (_, i) => findImageSrc(i + 1, theme))
+    );
+
     // Build card data: 6 image cards + 6 text cards
     const cardData = [];
     for (let i = 1; i <= TOTAL_PAIRS; i++) {
       const item = textsData[String(i)];
-      cardData.push({ id: i, type: 'image', src: `images/${i}-${theme}.png`, name: item.name });
+      cardData.push({ id: i, type: 'image', src: imageSrcs[i - 1], name: item.name });
       cardData.push({ id: i, type: 'text', text: item.text, name: item.name });
     }
 
