@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard — Memory Card Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container scoreboard-container">
+    <div class="game-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>Live Scoreboard</h1>
+    </div>
+
+    <div id="auth-screen" class="screen">
+      <h2>Teacher Access</h2>
+      <input type="password" id="teacher-password" placeholder="Enter password" autocomplete="off">
+      <button id="auth-btn" class="btn">Enter</button>
+      <p id="auth-error" class="error hidden">Wrong password</p>
+    </div>
+
+    <div id="scoreboard-screen" class="screen hidden">
+      <div class="scoreboard-controls">
+        <button id="clear-scores-btn" class="btn btn-danger">Clear All Scores</button>
+      </div>
+      <div class="scoreboards">
+        <div class="scoreboard-panel">
+          <h2>🍣 Foods</h2>
+          <ol id="food-scores" class="score-list"></ol>
+        </div>
+        <div class="scoreboard-panel">
+          <h2>🏛️ Monuments</h2>
+          <ol id="monument-scores" class="score-list"></ol>
+        </div>
+        <div class="scoreboard-panel">
+          <h2>🏆 Combined</h2>
+          <ol id="combined-scores" class="score-list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/12.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.10.0/firebase-database-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/scoreboard.js"></script>
+</body>
+</html>

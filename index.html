@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Memory Card Game</h1>
+
+    <div id="name-screen" class="screen">
+      <h2>Enter your name</h2>
+      <input type="text" id="player-name" placeholder="Your name" maxlength="30" autocomplete="off">
+      <button id="name-submit-btn" class="btn">Continue</button>
+    </div>
+
+    <div id="theme-screen" class="screen hidden">
+      <h2>Choose a theme</h2>
+      <p id="welcome-msg"></p>
+      <div class="theme-buttons">
+        <button class="btn theme-btn" data-theme="food">
+          <span class="theme-icon">🍣</span>
+          Foods
+        </button>
+        <button class="btn theme-btn" data-theme="monument">
+          <span class="theme-icon">🏛️</span>
+          Monuments
+        </button>
+      </div>
+      <div class="teacher-link">
+        <a href="scoreboard.html">Teacher Scoreboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    const nameInput = document.getElementById('player-name');
+    const nameBtn = document.getElementById('name-submit-btn');
+    const nameScreen = document.getElementById('name-screen');
+    const themeScreen = document.getElementById('theme-screen');
+    const welcomeMsg = document.getElementById('welcome-msg');
+
+    function submitName() {
+      const name = nameInput.value.trim();
+      if (!name) return;
+      sessionStorage.setItem('playerName', name);
+      nameScreen.classList.add('hidden');
+      themeScreen.classList.remove('hidden');
+      welcomeMsg.textContent = `Welcome, ${name}!`;
+    }
+
+    nameBtn.addEventListener('click', submitName);
+    nameInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') submitName();
+    });
+
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const theme = btn.dataset.theme;
+        window.location.href = `game.html?theme=${theme}`;
+      });
+    });
+  </script>
+</body>
+</html>
