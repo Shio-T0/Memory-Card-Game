@@ -9,15 +9,18 @@
 <body>
   <div class="container scoreboard-container">
     <div class="game-header">
-      <a href="index.html" class="back-btn">&larr; Back</a>
+      <a href="index.html" class="back-btn">&larr;</a>
       <h1>Live Scoreboard</h1>
+      <div style="width: 38px;"></div>
     </div>
 
     <div id="auth-screen" class="screen">
-      <h2>Teacher Access</h2>
-      <input type="password" id="teacher-password" placeholder="Enter password" autocomplete="off">
-      <button id="auth-btn" class="btn">Enter</button>
-      <p id="auth-error" class="error hidden">Wrong password</p>
+      <div class="glass-panel" style="padding: 2rem 1.5rem;">
+        <h2>Teacher Access</h2>
+        <input type="password" id="teacher-password" placeholder="Enter password" autocomplete="off">
+        <button id="auth-btn" class="btn">Unlock</button>
+        <p id="auth-error" class="error hidden">Wrong password</p>
+      </div>
     </div>
 
     <div id="scoreboard-screen" class="screen hidden">
