@@ -1,5 +1,5 @@
 (function () {
-  const TEACHER_PASSWORD = 'teacher123';
+  const TEACHER_PASSWORD = 'C0rdTe0cher1';
 
   const authScreen = document.getElementById('auth-screen');
   const scoreboardScreen = document.getElementById('scoreboard-screen');
