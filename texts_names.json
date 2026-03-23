@@ -1,18 +1,18 @@
 {
   "food": {
     "1": { "name": "Chupa Chups (Spain)", "text": "The logo of the brand was created by Salvador Dalí (Spanish painter) in 1969" },
-    "2": { "name": "Fish and Chips (United Kingdom)", "text": "The British governament safeguarded supplies of the dish's ingredients during the First World War." },
+    "2": { "name": "Fish and Chips (United Kingdom)", "text": "British governament safeguarded supplies of the dish's ingredients during the First World War." },
     "3": { "name": "Tatin pie (France)", "text": "Apple pie created in 1880s at Hotel Tatin by two sisters Stéphanie and Caroline Tatin " },
     "4": { "name": "Tempura (Japan)", "text": "Japanese adaptation of the portuguese dish “peixinhos da horta”" },
-    "5": { "name": "Mandioca (Africa) (cassava in English)", "text": "It is used in pasta dishes especially in African cultures." },
-    "6": { "name": "Quesadilla (Mexico)", "text": "Originaly from colonial Mexico (16th century) as a fusion between corn tortillas and dairy products like cheese." }
+    "5": { "name": "Mandioca (Africa) (cassava in English)", "text": "Used in pasta dishes especially in African cultures." },
+    "6": { "name": "Quesadilla (Mexico)", "text": "Originaly from colonial Mexico as a fusion between corn tortillas and dairy products like cheese." }
   },
   "monument": {
-    "1": { "name": "Burj Khalifa (United Arab Emirates)", "text": "It is the tallest building in the world with 829,8m of height located in United Arab Emirates" },
-    "2": { "name": "Great wall of China", "text": "It is a fortification built across northen China from 7th century BC to protect from nomadic invasions." },
-    "3": { "name": "Taj Mahal (India)", "text": "It was constructed featuring Persian, Islamic and Indian styles. This is a UNESCO World Heritage Site" },
-    "4": { "name": "Statue of Liberty (USA)", "text": "It is a universal symbol of freedom, democracy and friendship which was offered to U.S. on October 28, 1886 by France." },
-    "5": { "name": "Ruins of St. Pauls", "text": "It  is a 17th century facade of a former Jesuit church in Macau, destroyed by fire in 1835." },
-    "6": { "name": "Tower Bridge (United Kingdom)", "text": "It was constructed between 1886 and 1894 in London." }
+    "1": { "name": "Burj Khalifa (United Arab Emirates)", "text": "Tallest building in the world with 829,8m of height located in United Arab Emirates" },
+    "2": { "name": "Great wall of China", "text": "Fortification built across northen China from 7th century BC to protect from nomadic invasions." },
+    "3": { "name": "Taj Mahal (India)", "text": "Constructed featuring Persian, Islamic and Indian styles. This is a UNESCO World Heritage Site" },
+    "4": { "name": "Statue of Liberty (USA)", "text": "It is a universal symbol of freedom, democracy and friendship offered to U.S" },
+    "5": { "name": "Ruins of St. Pauls", "text": "17th century facade of a former Jesuit church in Macau, destroyed by fire in 1835." },
+    "6": { "name": "Tower Bridge (United Kingdom)", "text": "Constructed between 1886 and 1894 in London." }
   }
 }
